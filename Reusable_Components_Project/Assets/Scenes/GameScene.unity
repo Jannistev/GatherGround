@@ -2414,7 +2414,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326951757}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2424,8 +2424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.79757, y: -41}
-  m_SizeDelta: {x: 360.681, y: 399.0839}
+  m_AnchoredPosition: {x: -0.0014038086, y: -36.87712}
+  m_SizeDelta: {x: 354.2467, y: 399.0282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326951759
 MonoBehaviour:
@@ -2894,7 +2894,19 @@ MonoBehaviour:
   _amountNeeded: 300
   _onSucceed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1839582965}
+        m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: WinScreen
+          m_BoolArgument: 0
+        m_CallState: 2
   pickCounterUI: {fileID: 335045000}
 --- !u!114 &335045002
 MonoBehaviour:
@@ -5050,7 +5062,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906769377}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5059,7 +5071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.79759, y: 215}
+  m_AnchoredPosition: {x: -6.702484, y: 218.76532}
   m_SizeDelta: {x: 114.335, y: 45.5665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &906769379
@@ -5614,8 +5626,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -457.37732, y: 229.33772}
-  m_SizeDelta: {x: 351.1252, y: 58.6246}
+  m_AnchoredPosition: {x: -409.46097, y: 234.02814}
+  m_SizeDelta: {x: 160.2033, y: 49.2437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &967552328
 MonoBehaviour:
@@ -5664,7 +5676,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.45
+  m_fontSize: 44.05
   m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6014,8 +6026,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.99832, y: 136.35649}
-  m_SizeDelta: {x: 463.8834, y: 56.5724}
+  m_AnchoredPosition: {x: -394.7883, y: 140.33678}
+  m_SizeDelta: {x: 200.3034, y: 48.6118}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1061095058
 MonoBehaviour:
@@ -6064,7 +6076,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.6
+  m_fontSize: 43.5
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6719,8 +6731,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 434.71985, y: 10.099579}
-  m_SizeDelta: {x: -936.0233, y: -63.8065}
+  m_AnchoredPosition: {x: 306, y: 13.8771}
+  m_SizeDelta: {x: -665.0763, y: -71.3617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1149201178
 MonoBehaviour:
@@ -7488,8 +7500,8 @@ MonoBehaviour:
   _offsetX: 0
   _offsetY: 0.1
   _offsetZ: 0
-  _sensX: 600
-  _sensY: 600
+  _sensX: 300
+  _sensY: 300
   _minClampY: -90
   _maxClampY: 90
 --- !u!114 &1351995798
