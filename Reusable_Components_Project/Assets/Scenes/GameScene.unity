@@ -10210,8 +10210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92db46c6e7c2cb14b8e43b748287491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minTimeUntilDropItem: 0
-  _maxTimeUntilDropItem: 0
+  _minTimeUntilDropItem: 10
+  _maxTimeUntilDropItem: 20
 --- !u!114 &1790045223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11004,8 +11004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92db46c6e7c2cb14b8e43b748287491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minTimeUntilDropItem: 0
-  _maxTimeUntilDropItem: 0
+  _minTimeUntilDropItem: 10
+  _maxTimeUntilDropItem: 20
 --- !u!114 &1923631778
 MonoBehaviour:
   m_ObjectHideFlags: 0

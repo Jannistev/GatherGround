@@ -23,17 +23,17 @@ public class Item : MonoBehaviour, IPausable
 
     private void Awake()
     {
-        IItemBehaviour[] behaviours = GetComponents<IItemBehaviour>();
+        //elk gevonden IItemBehaviour word in de list gestopt
+        _behaviours.AddRange(GetComponents<IItemBehaviour>());
 
-        foreach (IItemBehaviour behaviour in behaviours)
+        //bij elke IItemBehaviour word de item meegegeven
+        foreach (IItemBehaviour behaviour in _behaviours)
         {
-            _behaviours.Add(behaviour);
             behaviour.Item = this;
         }
     }
     private void Start()
     {
-        IItemBehaviour[] behaviours = GetComponents<IItemBehaviour>();  
         _pickable = GetComponent<Pickable>();
         _spawnSetter = GetComponent<SpawnPointSetter>();
      
