@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        print(_upForce.ToString());
         if (_movement != null && (_movement as MonoBehaviour).enabled)
             _movement.Move(_rigid);
 

@@ -2891,7 +2891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d5ad121a95a46044830f6857e2dd69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _amountNeeded: 300
+  _amountNeeded: 600
   _onSucceed:
     m_PersistentCalls:
       m_Calls:
@@ -7332,7 +7332,6 @@ GameObject:
   - component: {fileID: 1351995791}
   - component: {fileID: 1351995790}
   - component: {fileID: 1351995789}
-  - component: {fileID: 1351995796}
   - component: {fileID: 1351995797}
   - component: {fileID: 1351995799}
   - component: {fileID: 1351995798}
@@ -7340,6 +7339,7 @@ GameObject:
   - component: {fileID: 1351995802}
   - component: {fileID: 1351995803}
   - component: {fileID: 1351995804}
+  - component: {fileID: 1351995805}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7470,20 +7470,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1351995796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351995787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ee813a4835ffa4f886c08893936d53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _jumpForce: 6
-  _groundDistance: 0.3
 --- !u!114 &1351995797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7637,6 +7623,20 @@ MonoBehaviour:
   _onReturn:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1351995805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351995787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ee813a4835ffa4f886c08893936d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpForce: 6
+  _groundDistance: 0.3
 --- !u!1 &1360065885
 GameObject:
   m_ObjectHideFlags: 0
@@ -9054,6 +9054,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560541325}
   m_CullTransparentMesh: 1
+--- !u!1 &1587960889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587960890}
+  - component: {fileID: 1587960891}
+  m_Layer: 0
+  m_Name: JumpForce
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1587960890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587960889}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1983739273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587960891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587960889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda0991423fc5cb4eae88c7056002aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpForce: 6
+  _groundDistance: 0.3
 --- !u!1 &1615796678
 GameObject:
   m_ObjectHideFlags: 0
@@ -11244,14 +11290,14 @@ GameObject:
   - component: {fileID: 1983739281}
   - component: {fileID: 1983739280}
   - component: {fileID: 1983739279}
+  - component: {fileID: 1983739286}
   - component: {fileID: 1983739278}
   - component: {fileID: 1983739277}
   - component: {fileID: 1983739276}
   - component: {fileID: 1983739275}
-  - component: {fileID: 1983739274}
   - component: {fileID: 1983739285}
   m_Layer: 0
-  m_Name: HotSlowDropperDrainerDisabler
+  m_Name: HotSlowDropperDrainerDouble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11269,22 +11315,10 @@ Transform:
   m_LocalPosition: {x: 2.67, y: 1.55, z: -76.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1587960890}
   m_Father: {fileID: 1360065886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1983739274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983739272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1454f4547ac42a4581a898b2c08e7f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _newJumpForce: 5
 --- !u!114 &1983739275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11351,7 +11385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f446a72d00e4a7468ecc167ee5fbbb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: HotSlowDropperDrainerDisabler
+  _itemName: HotSlowDropperDrainerDouble
   _itemWeight: 30
   _worth: 400
   _onPicked:
@@ -11489,6 +11523,18 @@ MonoBehaviour:
   _onReturn:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1983739286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983739272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91da84203e03e3c4e8035e761052a4de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1996546023
 GameObject:
   m_ObjectHideFlags: 0
